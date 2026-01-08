@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Understanding Drug Addiction</title>
+
+<style>
+/* ------------------------------
+   BASIC PAGE STYLES
+------------------------------ */
+body {
+  font-family: Arial, sans-serif;
+  background: none; /* YOU WILL SET YOUR OWN BACKGROUND */
+  padding: 20px;
+  margin: 0;
+  font-size: 1.15em;
+}
+
+h1 {
+  text-align: center;
+  color: #d32f2f;
+}
+
+nav {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+nav a {
+  background: #000;
+  color: yellow;
+  padding: 10px 18px;
+  border-radius: 6px;
+  text-decoration: none;
+}
+nav a:hover { background: #333; }
+
+/* ------------------------------
+   CONTENT SECTIONS
+------------------------------ */
+section {
+  background: #fff;
+  padding: 22px;
+  border-radius: 12px;
+  max-width: 800px;
+  margin: 25px auto;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+h2 { margin-top: 0; color: #333; }
+h3 { color: #b71c1c; }
+
+/* ------------------------------
+   SECRET BOX (Draggable)
+------------------------------ */
+#secretBox {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: #ffffff;
+  padding: 12px;
+  width: 200px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  cursor: grab;
+  resize: both;
+  overflow: auto;
+  z-index: 9999;
+}
+#secretBox img {
+  width: 150px;
+  margin-top: 10px;
+}
+
+/* ------------------------------
+   GIF BOX (Draggable)
+------------------------------ */
+#gifBox {
+  position: fixed;
+  top: 120px;
+  left: 20px;
+  width: 160px;
+  height: 160px;
+  background: white;
+  border: 2px dashed #999;
+  border-radius: 10px;
+  padding: 5px;
+  resize: both;
+  overflow: hidden;
+  cursor: grab;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  z-index: 9999;
+}
+#gifClose {
+  position: absolute;
+  top: 3px;
+  right: 3px;
+  background: #ff5b5b;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 22px;
+  height: 22px;
+}
+#gifBox img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+</style>
+</head>
+
+<body>
+
+<!-- SECRET BOX -->
+<div id="secretBox">
+  <b style="color:red;">Having Trouble With Drug Addiction?</b>
+  <img src="https://media0.giphy.com/media/RX36qtKwbW49VkeFgr/giphy.webp">
+  <a href="drug.php" style="color:#c00;text-decoration:underline;">Click Here</a>
+</div>
+
+<!-- GIF BOX -->
+<div id="gifBox">
+  <button id="gifClose">×</button>
+  <img src="https://media.tenor.com/y2JXkY1pXkwAAAAM/cat-computer.gif">
+</div>
+
+<h1>It's okay – things will get better ❤️</h1>
+
+<nav><a href="index.php">Home</a></nav>
+
+<!-- ============================
+     SECTION 1 — What is Addiction?
+=============================== -->
+<section>
+  <h2>What Is Drug Addiction?</h2>
+  <p>
+    Drug addiction is a chronic disease that affects the brain and behavior.
+    It causes a person to lose control over using a substance even when it harms their life.
+    Over time, drugs rewire the brain’s reward system, making quitting extremely difficult.
+  </p>
+</section>
+
+<!-- ============================
+     DRUG SECTIONS (All in one page)
+=============================== -->
+
+<!-- TOBACCO -->
+<section>
+  <h2>🚬 Tobacco / Nicotine Addiction</h2>
+  <h3>Short-Term Effects</h3>
+  <ul>
+    <li>Increased heart rate</li>
+    <li>Reduced appetite</li>
+    <li>Stress relief (temporary)</li>
+  </ul>
+
+  <h3>Long-Term Effects</h3>
+  <ul>
+    <li>Lung cancer & breathing problems</li>
+    <li>Heart disease</li>
+    <li>Anxiety & mood swings</li>
+    <li>Premature aging</li>
+  </ul>
+</section>
+
+<!-- ALCOHOL -->
+<section>
+  <h2>🍺 Alcohol Addiction</h2>
+  <h3>Short-Term Effects</h3>
+  <ul>
+    <li>Poor coordination & judgment</li>
+    <li>Memory loss</li>
+  </ul>
+
+  <h3>Long-Term Effects</h3>
+  <ul>
+    <li>Liver damage</li>
+    <li>High anxiety & depression</li>
+    <li>Brain shrinkage & memory decline</li>
+    <li>Violence or relationship problems</li>
+  </ul>
+</section>
+
+<!-- METH -->
+<section>
+  <h2>💥 Methamphetamine (Meth)</h2>
+  <h3>Short-Term Effects</h3>
+  <ul>
+    <li>Extreme energy & euphoria</li>
+    <li>Fast heart rate</li>
+  </ul>
+
+  <h3>Long-Term Effects</h3>
+  <ul>
+    <li>Severe tooth decay (“meth mouth”)</li>
+    <li>Psychosis & hallucinations</li>
+    <li>Brain damage affecting thinking</li>
+    <li>Violent behavior</li>
+  </ul>
+</section>
+
+<!-- LSD -->
+<section>
+  <h2>🌈 LSD</h2>
+  <h3>Short-Term Effects</h3>
+  <ul>
+    <li>Distorted reality & hallucinations</li>
+    <li>Emotional swings</li>
+  </ul>
+
+  <h3>Long-Term Effects</h3>
+  <ul>
+    <li>Flashbacks</li>
+    <li>Persistent anxiety</li>
+    <li>Difficulty separating reality from imagination</li>
+  </ul>
+</section>
+
+<!-- MARIJUANA -->
+<section>
+  <h2>🍃 Marijuana</h2>
+  <h3>Short-Term Effects</h3>
+  <ul>
+    <li>Altered senses & mood</li>
+    <li>Difficulty thinking</li>
+  </ul>
+
+  <h3>Long-Term Effects</h3>
+  <ul>
+    <li>Reduced memory & motivation</li>
+    <li>Increased risk of anxiety</li>
+    <li>Possible addiction in teens</li>
+  </ul>
+</section>
+
+<!-- SLEEPING PILLS -->
+<section>
+  <h2>💤 Sleeping Pill Misuse</h2>
+  <h3>Short-Term Effects</h3>
+  <ul>
+    <li>Drowsiness</li>
+    <li>Slow reaction time</li>
+  </ul>
+
+  <h3>Long-Term Effects</h3>
+  <ul>
+    <li>Dependence requiring higher doses</li>
+    <li>Memory problems</li>
+    <li>Depression & emotional numbness</li>
+  </ul>
+</section>
+
+<!-- ============================
+    RECOVERY & RELAPSE PREVENTION
+=============================== -->
+<section>
+  <h2>🌱 How to Recover From Drug Addiction</h2>
+  <ul>
+    <li>Seek professional counseling or rehab support</li>
+    <li>Build a daily routine</li>
+    <li>Find healthy replacements: exercise, hobbies, journaling</li>
+    <li>Create distance from drug-using friends or environments</li>
+    <li>Follow medication plans if prescribed</li>
+    <li>Practice mindfulness & breathing techniques</li>
+  </ul>
+
+  <h3>⚠ Warning Signs of Relapse</h3>
+  <ul>
+    <li>Hanging out with old drug-using friends</li>
+    <li>Skipping appointments or routines</li>
+    <li>Sudden mood changes</li>
+    <li>Thinking “just once won’t hurt”</li>
+  </ul>
+
+  <h3>🛡 Relapse Prevention Tips</h3>
+  <ul>
+    <li>Stay connected with support groups</li>
+    <li>Practice 5-minute urges delay (“I’ll wait 5 minutes”)</li>
+    <li>Write down why you want to stay clean</li>
+    <li>Keep a list of emergency contacts</li>
+    <li>Avoid triggers whenever possible</li>
+  </ul>
+</section>
+
+<!-- ============================
+     DRAGGABLE SCRIPTS
+=============================== -->
+<script>
+// SECRET BOX DRAG
+(function(){
+  let box = document.getElementById("secretBox"), drag=false, x=0, y=0;
+  box.onmousedown = e => { drag=true; x=e.clientX-box.offsetLeft; y=e.clientY-box.offsetTop; };
+  document.onmousemove = e => { if(drag){ box.style.left=e.clientX-x+"px"; box.style.top=e.clientY-y+"px"; } };
+  document.onmouseup = () => drag=false;
+})();
+
+// GIF BOX DRAG
+(function(){
+  let box = document.getElementById("gifBox"), drag=false, x=0, y=0;
+  box.onmousedown = e => { if(e.target.id!=="gifClose"){ drag=true; x=e.clientX-box.offsetLeft; y=e.clientY-box.offsetTop; }};
+  document.onmousemove = e => { if(drag){ box.style.left=e.clientX-x+"px"; box.style.top=e.clientY-y+"px"; }};
+  document.onmouseup = () => drag=false;
+})();
+
+// Close GIF Box
+document.getElementById("gifClose").onclick = () => {
+  document.getElementById("gifBox").style.display="none";
+};
+</script>
+
+</body>
+</html>

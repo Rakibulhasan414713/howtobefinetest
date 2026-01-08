@@ -1,0 +1,50 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f5f5;
+  padding: 20px;
+}
+
+header { text-align:center; }
+
+.tabs { text-align:center; margin:20px 0; }
+.tabs button {
+  margin:5px;
+  padding:10px 20px;
+  cursor:pointer;
+  background:#333; color:#fff; border:none; border-radius:6px;
+}
+
+.tab-section { display:none; max-width:700px; margin:auto; }
+.tab-section.active { display:block; }
+
+.card {
+  background:white; padding:15px; margin:10px 0;
+  border-radius:10px; box-shadow:0 2px 6px rgba(0,0,0,0.2);
+}
+
+.card.danger {
+  border-left:5px solid red;
+}
+
+.secret-box {
+  position:fixed; top:20px; right:20px; background:white;
+  padding:10px; border-radius:10px; z-index:9999;
+  box-shadow:0 0 10px rgba(0,0,0,0.3);
+}
+
+#gifBox {
+  position:fixed; top:120px; left:20px;
+  width:160px; height:160px;
+  background:rgba(255,255,255,0.8);
+  border:2px dashed #aaa;
+  border-radius:10px;
+  overflow:hidden;
+  resize:both;
+  cursor:grab;
+}
+
+#gifClose {
+  position:absolute; top:5px; right:5px;
+  background:red; color:white; border:none;
+  width:25px; height:25px; border-radius:50%;
+}
